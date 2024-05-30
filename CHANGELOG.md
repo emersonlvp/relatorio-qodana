@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.4.2](https://github.com/brunoc107/ngx-viacep/compare/v3.4.1...v3.4.2) (2024-05-30)
+
+
+### Bug Fixes
+
+* removing qodana dependency ([367428c](https://github.com/brunoc107/ngx-viacep/commit/367428c6eb58a66ff05b1e5785c91355839d4dbd))
+* removing static check POC ([e481582](https://github.com/brunoc107/ngx-viacep/commit/e481582adc925d394bd944009585f494ceced767))
+
 ### [3.4.1](https://github.com/brunoc107/ngx-viacep/compare/v3.4.0...v3.4.1) (2023-09-20)
 
 ## [3.4.0](https://github.com/brunoc107/ngx-viacep/compare/v3.1.0...v3.4.0) (2023-09-20)
