@@ -2,11 +2,10 @@ name: npm-publish
 on:
   push:
     branches:
-      - master # Change this to your default branch
+      - master
 jobs:
   build:
     name: build
-    needs: ['qodana']
     runs-on: ubuntu-latest
     strategy:
       matrix:
