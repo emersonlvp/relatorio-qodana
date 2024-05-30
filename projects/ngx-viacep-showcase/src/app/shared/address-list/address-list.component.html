@@ -3,8 +3,7 @@
     Endereços encontrados:
     <span class="font-normal text-slate-800">{{enderecos.length}}</span>
   </div>
-  <app-address-card
-    *ngFor="let endereco of enderecos"
-    [endereco]="endereco"
-  ></app-address-card>
+  @for (endereco of enderecos; track $index) {
+    <app-address-card [endereco]="endereco"/>
+  }
 </div>

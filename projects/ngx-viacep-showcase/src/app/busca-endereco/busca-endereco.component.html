@@ -22,17 +22,13 @@
           </div>
         </div>
 
-        <div class="rounded-xl p-3 bg-red-400 shadow" role="alert" *ngIf="error; else addr">
+        @if (error) {
+        <div class="rounded-xl p-3 bg-red-400 shadow" role="alert">
           {{errorMessage}}
         </div>
-
-        <ng-template #addr>
-          <app-address-list
-            *ngIf="enderecos"
-            [enderecos]="enderecos"
-          ></app-address-list>
-        </ng-template>
-
+        } @else {
+          <app-address-list [enderecos]="enderecos" />
+        }
       </div>
 
     </div>

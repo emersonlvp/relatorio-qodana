@@ -24,12 +24,13 @@
         </button>
       </div>
 
-      <div class="rounded-xl p-3 bg-red-400 shadow" role="alert" *ngIf="error; else addr">
+      @if (endereco) {
+        <app-address-card [endereco]="endereco" />
+      } @else {
+        <div class="rounded-xl p-3 bg-red-400 shadow" role="alert">
           {{errorMessage}}
-      </div>
-      <ng-template #addr>
-        <app-address-card *ngIf="endereco" [endereco]="endereco"/>
-      </ng-template>
+        </div>
+      }
     </div>
 
   </div>
