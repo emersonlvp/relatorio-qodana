@@ -23,9 +23,9 @@
         </div>
 
         @if (error) {
-        <div class="rounded-xl p-3 bg-red-400 shadow" role="alert">
-          {{errorMessage}}
-        </div>
+          <div class="rounded-xl p-3 bg-red-400 shadow" role="alert">
+            {{errorMessage}}
+          </div>
         } @else {
           <app-address-list [enderecos]="enderecos" />
         }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 
 import {
   Endereco,
@@ -6,7 +6,7 @@ import {
   NgxViacepService,
   CEPErrorCode,
 } from '@brunoc/ngx-viacep';
-import { EMPTY } from 'rxjs';
+import {EMPTY, Subscription} from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
 @Component({
@@ -14,7 +14,8 @@ import { catchError } from 'rxjs/operators';
   templateUrl: './busca-endereco.component.html',
   styleUrls: ['./busca-endereco.component.scss'],
 })
-export class BuscaEnderecoComponent implements OnInit {
+export class BuscaEnderecoComponent implements OnDestroy {
+  private cepSubscription!: Subscription;
   uf = '';
   municipio = '';
   logradouro = '';
@@ -24,14 +25,16 @@ export class BuscaEnderecoComponent implements OnInit {
 
   constructor(private viacep: NgxViacepService) {}
 
-  ngOnInit() {}
+  ngOnDestroy() {
+    this.cepSubscription.unsubscribe();
+  }
 
   public buscarEndereco(): void {
     this.enderecos = [];
     this.error = false;
     this.errorMessage = '';
 
-    this.viacep
+    this.cepSubscription = this.viacep
       .buscarPorEndereco(this.uf, this.municipio, this.logradouro)
       .pipe(
         catchError((erro: CEPError) => {
