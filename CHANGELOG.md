@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.5.0](https://github.com/brunoc107/ngx-viacep/compare/v3.4.2...v3.5.0) (2024-05-31)
+
+
+### Features
+
+* restoring backwards compatibility and updating showcase ([adc1c85](https://github.com/brunoc107/ngx-viacep/commit/adc1c857195f8b61c0eca0d33d875d481466e930))
+* upgrading framework version and removing uneeded dependencies ([aa112ee](https://github.com/brunoc107/ngx-viacep/commit/aa112ee0d81b989fde7f3cb7e098fb1991592c0b))
+* upgrading root project to angular 18 ([fb64f30](https://github.com/brunoc107/ngx-viacep/commit/fb64f302cf9c23c921240ad7e4a744ff73439949))
+
 ### [3.4.2](https://github.com/brunoc107/ngx-viacep/compare/v3.4.1...v3.4.2) (2024-05-30)
 
 
