@@ -24,7 +24,7 @@ export class BuscaCepComponent implements OnDestroy {
   constructor(private viacep: NgxViacepService) {}
 
   ngOnDestroy() {
-    this.cepSubscription.unsubscribe();
+    this.cepSubscription?.unsubscribe();
   }
 
   public buscarCep(): void {

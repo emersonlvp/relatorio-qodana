@@ -26,7 +26,7 @@ export class BuscaEnderecoComponent implements OnDestroy {
   constructor(private viacep: NgxViacepService) {}
 
   ngOnDestroy() {
-    this.cepSubscription.unsubscribe();
+    this.cepSubscription?.unsubscribe();
   }
 
   public buscarEndereco(): void {

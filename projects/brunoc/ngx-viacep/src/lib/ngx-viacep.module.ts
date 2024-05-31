@@ -1,14 +1,11 @@
-import { HttpClientModule } from '@angular/common/http';
+import {HttpClientModule, provideHttpClient} from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
 
 @NgModule({
   declarations: [],
-  imports: [
-    HttpClientModule
-  ],
-  exports: [
-    
-  ]
+  imports: [],
+  exports: [],
+  providers: [provideHttpClient()]
 })
 export class NgxViacepModule { }
