@@ -1,6 +1,6 @@
-# Ngx-Viacep!
+> **<span style="color: #ffa300">Aviso</span>:** Este repositório não receberá mais atualizações. Se precisar de alguma correção, clone o repositório. A biblioteca no npm também está descontinuada.
 
-> **Aviso:** Este repositório não receberá mais atualizações. Se precisar de alguma correção, clone o repositório. A biblioteca no npm também está descontinuada.
+# Ngx-Viacep!
 
 Uma biblioteca Angular para busca de CEP e endereços pelo serviço <a class="md-link" target="_blank" href="https://viacep.com.br">ViaCep</a>.
 
