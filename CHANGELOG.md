@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.5.2](https://github.com/brunoc107/ngx-viacep/compare/v3.5.1...v3.5.2) (2024-05-31)
+
+
+### Bug Fixes
+
+* removing HttpClientModule import ([450167a](https://github.com/brunoc107/ngx-viacep/commit/450167a67d3f270585e96772790ba12173c77fa3))
+
 ### [3.5.1](https://github.com/brunoc107/ngx-viacep/compare/v3.5.0...v3.5.1) (2024-05-31)
 
 
